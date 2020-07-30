@@ -1,7 +1,13 @@
-*{
+*,
+**::after,
+**::before{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
 }
 
 body {
@@ -11,7 +17,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400px;
-  font-size: 16px;
+  /* font-size: 16px; */
   line-height: 1.7;
   color: #777;
 }
