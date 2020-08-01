@@ -1,7 +1,7 @@
 import React from 'react';
 
-import './button.styles.css'
+import './button.styles.scss'
 
-export const Button = ({ children, animated }) => (
-    <a href='#i' className={`${animated ? 'btn btn-white btn-animated' : 'btn btn-white'}`}>{children}</a>
+export const Button = ({ children, isAnimated }) => (
+    <a href='#i' className={`${isAnimated ? 'btn btn--white btn--animated' : 'btn btn--white'}`}>{children}</a>
 )
