@@ -18,20 +18,12 @@ $gutter-horizontal:6rem;
     background-color: $color-grey-light-1;
     padding: 25rem 0;
     margin-top: -25vh;
-
-    .u-center-text{
-        text-align: center;
-    }
-
-    .u-margin-bottom-8{
-        margin-bottom: 8rem;
-    }
 }
 
 
 .row{
     max-width: $grid-width;
-    background-color: #eee;
+    // background-color: #eee;
     margin: 0 auto;
 
     &:not(:last-child){

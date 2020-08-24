@@ -1,0 +1,26 @@
+.App{
+  padding: 3rem;
+}
+
+// utility classes
+.u-center-text{text-align: center;}
+.u-margin-bottom-big{margin-bottom: 8rem;}
+.u-margin-bottom-small{margin-bottom: 1.5rem;}
+.u-margin-bottom-medium{margin-bottom: 4rem;}
+
+// end
+
+.heading-tertiary{
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph{
+  font-size: 1.6rem;
+  margin-bottom: 0;
+
+  &:not(:last-child){
+    margin-bottom: 3rem;
+  }
+}
