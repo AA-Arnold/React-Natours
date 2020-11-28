@@ -28,6 +28,7 @@ export const Features = () => (
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Exercitationem, necessitatibus! 
                 </FeatureBox>
-            </div>       </div>
+            </div>      
+        </div>
     </section>
 )

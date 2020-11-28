@@ -29,7 +29,7 @@ export const Main = () => (
                         repudiandae natus obcaecati quaerat deleniti possimus velit! Autem, eligendi.
                     </p>
 
-                    <LearnMore>Learn More &rarr;</LearnMore>
+                    <LearnMore>Learn More &rarr; </LearnMore>
                 </div>
                 <div className='col-1-of-2'>
                     <ImageComposition />

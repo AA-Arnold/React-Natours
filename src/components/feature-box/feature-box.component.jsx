@@ -1,6 +1,8 @@
 import React from 'react'
 import './feature-box.component.scss'
 
+
+//iconName is a linear package to use this component make sure the package is available
 export const FeatureBox = ({children, heading, iconName}) => (
     <div className="feature-box">
         <i className={`feature-box__icon ${iconName}`}></i>
