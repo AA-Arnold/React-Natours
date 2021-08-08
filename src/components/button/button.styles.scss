@@ -1,5 +1,6 @@
 $color-white: #fff;
 $color-black: #000;
+$color-primary:#55c57a;
 
 .btn{
 
@@ -35,6 +36,15 @@ $color-black: #000;
 
         &::after{
             background-color: $color-white;
+        }
+    }
+
+    &--green{
+        background-color: $color-primary;
+        color: $color-white;
+
+        &::after{
+            background-color: $color-primary;
         }
     }
     
