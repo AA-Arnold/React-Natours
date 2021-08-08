@@ -1,0 +1,83 @@
+$color-black: #000;
+$color-white: #fff;
+$grid-width:114rem;
+
+.row{
+    max-width: $grid-width;
+    margin: 0 auto;
+}
+
+.story{
+    width: 75%;
+    margin: 0 auto;
+    box-shadow: 0 3rem 6rem rgba($color: $color-black, $alpha: .1);
+    background-color: rgba($color-white, .6);//controls opacity of review
+    border-radius: 3px;
+    padding: 6rem;
+    font-size: 1.6rem;
+    transform: skewX(-12deg);
+
+    &__shape{
+        width: 15rem;
+        height: 15rem;
+
+        //controls the wrapping of text
+        float: left;
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+
+        //makes the shape a circle with 150px width & height specified
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+
+        transform: skewX(12deg);// depenedent on the parent element
+        position: relative;
+
+        overflow: hidden;
+    }
+
+    &__img{
+
+        //control the size of the image initially to big using 
+        //100% because a fixed width & height has been set in the parent element
+        //also translatex to fix image in the middle 
+        height: 100%;
+        transform: translateX(-4rem) scale(1.4);
+        backface-visibility: hidden;
+        transition: all .5s;
+    }
+
+    &__text {
+        transform: skewX(12deg);
+
+        // @include respond(phone) {
+        //     transform: skewX(0);
+        // }
+    }
+
+    &__caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 20%);
+        color: $color-white;
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        text-align: center;
+        opacity: 0;
+        transition: all .5s;
+
+        //didn't notice shaking in animating so removed the property below browsers may have adapted
+        // backface-visibility: hidden;
+    }
+
+    &:hover &__caption {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+
+    &:hover &__img {
+        filter: blur(3px) brightness(80%);
+        transform: translateX(-4rem) scale(1.0);
+    }
+}

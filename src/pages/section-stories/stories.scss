@@ -1,0 +1,29 @@
+$grid-width:114rem;
+$color-grey-light-1:#f7f7f7;
+$color-black: #000;
+$color-white: #fff;
+
+.section-stories{
+    padding: 6rem  0 15rem 0;
+    position: relative;
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .15;
+    overflow: hidden;
+
+    &__content {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+
+

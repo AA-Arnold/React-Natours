@@ -5,7 +5,7 @@ import './fancy-card.scss'
 
 
 
-export const FancyCard = ({imageWithStyle,header,list,value,headWithStyle}) =>(
+export const FancyCard = ({imageWithStyle,header,list,value,headWithStyle,backGradient}) =>(
     <div className='card'>
         <div className="card__side card__side--front">
           <div className={`card__picture ${imageWithStyle}`}>
@@ -22,7 +22,7 @@ export const FancyCard = ({imageWithStyle,header,list,value,headWithStyle}) =>(
                 </ul>
          </div>
         </div>
-        <div className="card__side card__side--back card__side--back-1">
+        <div className={`card__side card__side--back card__side--back${backGradient}`}>
             <div className="card__cta">
                 <div className="card__price-box">
                     <p className="card__price-only">Only</p>
