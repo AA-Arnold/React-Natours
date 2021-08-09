@@ -13,7 +13,7 @@ import v2 from '../../assets/video.webm'
 export const Stories = () => (
     <section className="section-stories">
             <div className="bg-video">
-                    <video className="bg-video__content" autoplay muted loop>
+                    <video className="bg-video__content" autoPlay muted loop>
                         <source src={v1} type="video/mp4"/>
                         <source src={v2} type="video/webm"/>
                         Your browser is not supported!
