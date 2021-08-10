@@ -1,6 +1,15 @@
 $color-primary-light:#7ed56f;
 $color-primary-dark:#28b485; 
 
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+  }
+
 .heading-secondary{
     font-size: 3.5rem;
     text-transform: uppercase;
@@ -11,6 +20,14 @@ $color-primary-dark:#28b485;
     color: transparent;
     letter-spacing: 2px;
     // transition: all 3s;
+
+    @include respond(tab-port) {
+        font-size: 3rem;
+    }
+
+    @include respond(phone) {
+        font-size: 2rem;
+    }
 
     &:hover{
         transform: skewY(2deg) skewX(15deg) scale(1.1);

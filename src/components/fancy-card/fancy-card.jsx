@@ -27,7 +27,7 @@ export const FancyCard = ({imageWithStyle,header,list,value,headWithStyle,backGr
                 <div className="card__price-box">
                     <p className="card__price-only">Only</p>
                     <p className="card__price-value">{value}</p>
-                    <a href="#i" className="btn btn--white">Book now!</a>
+                    <a href="#popup" className="btn btn--white">Book now!</a>
                 </div>
             </div>
         </div>
