@@ -8,7 +8,7 @@ export const Footer = () => (
             <div className="footer__logo-box">
                 <img src={Logo} alt="Full logo" className="footer__logo"/>
             </div>
-            <div className="row">
+            <div className="row row-footer">
                 <div className="col-1-of-2">
                     <div className="footer__navigation">
                         <ul className="footer__list">

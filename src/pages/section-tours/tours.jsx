@@ -36,8 +36,8 @@ export const Tours = () =>(
         <div className="u-center-text u-margin-bottom-medium">
             <Heading>Most Popular tours</Heading>
         </div>
-            <div className='row'>
-                <div className='col-1-of-3'>
+            <div className='row3'>
+                <div className='col-1-of-3 col-tours'>
                     <FancyCard 
                     imageWithStyle={data.cardInfo_1.imageWithStyle} 
                     header={data.cardInfo_1.header} 
@@ -47,7 +47,7 @@ export const Tours = () =>(
                     backGradient={data.cardInfo_1.backGradient}
                     />
                 </div>
-                <div className='col-1-of-3'>
+                <div className='col-1-of-3 col-tours'>
                 <FancyCard 
                     imageWithStyle={data.cardInfo_2.imageWithStyle} 
                     header={data.cardInfo_2.header} 
@@ -57,7 +57,7 @@ export const Tours = () =>(
                     backGradient={data.cardInfo_2.backGradient}
                     />
                 </div>
-                <div className='col-1-of-3'>
+                <div className='col-1-of-3 col-tours'>
                 <FancyCard 
                     imageWithStyle={data.cardInfo_3.imageWithStyle} 
                     header={data.cardInfo_3.header} 

@@ -5,6 +5,15 @@ $color-white: #fff;
 $color-primary:#55c57a;
 $color-grey-dark-3:#333;
 
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+}
+
 .navigation {
     &__checkbox {
         display: none;
@@ -23,15 +32,15 @@ $color-grey-dark-3:#333;
         text-align: center;
         cursor: pointer;
 
-        // @include respond(tab-port) {
-        //     top: 4rem;
-        //     right: 4rem;
-        // }
+        @include respond(tab-port) {
+            top: 4rem;
+            right: 4rem;
+        }
 
-        // @include respond(phone) {
-        //     top: 3rem;
-        //     right: 3rem;
-        // }
+        @include respond(phone) {
+            top: 3rem;
+            right: 3rem;
+        }
     }
 
     &__background {
@@ -45,15 +54,15 @@ $color-grey-dark-3:#333;
         z-index: 1000;
         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
 
-        // @include respond(tab-port) {
-        //     top: 4.5rem;
-        //     right: 4.5rem;
-        // }
+        @include respond(tab-port) {
+            top: 4.5rem;
+            right: 4.5rem;
+        }
 
-        // @include respond(phone) {
-        //     top: 3.5rem;
-        //     right: 3.5rem;
-        // }
+        @include respond(phone) {
+            top: 3.5rem;
+            right: 3.5rem;
+        }
     }
 
     &__nav {

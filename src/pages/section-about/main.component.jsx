@@ -12,8 +12,8 @@ export const Main = () => (
                 <Heading>Exciting tours for adventurous people</Heading>
             </div>
 
-            <div className='row'>
-                <div className='col-1-of-2'>
+            <div className='row1'>
+                <div className='col-1-of-2 col-about'>
                     <h3 className="heading-tertiary u-margin-bottom-small">You're going to fall in love with nature</h3>
                     <p className="paragraph">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -31,7 +31,7 @@ export const Main = () => (
 
                     <LearnMore>Learn More</LearnMore>
                 </div>
-                <div className='col-1-of-2'>
+                <div className='col-1-of-2 col-about'>
                     <ImageComposition />
                 </div>
             </div>
