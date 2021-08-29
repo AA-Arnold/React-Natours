@@ -3,6 +3,9 @@ $color-white: #fff;
 $grid-width:114rem;
 
 @mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
     @if $breakpoint == tab-port {
         @media only screen and (max-width: 56.25em) { @content };     //900px
     }
@@ -28,9 +31,19 @@ $grid-width:114rem;
     font-size: 1.6rem;
     transform: skewX(-12deg);
 
+    @include respond(tab-port) {
+        padding: 4rem;
+        padding-left: 7rem;
+    }
+
+    @include respond(phone) {
+        transform: skewX(0);
+    }
+
     &__shape{
         width: 15rem;
         height: 15rem;
+        margin-right: 4rem;
 
         //controls the wrapping of text
         float: left;
@@ -45,6 +58,10 @@ $grid-width:114rem;
         position: relative;
 
         overflow: hidden;
+
+        @include respond(phone) {
+            transform: translateX(0) skewX(0);
+        }
     }
 
     &__img{
@@ -61,9 +78,9 @@ $grid-width:114rem;
     &__text {
         transform: skewX(12deg);
 
-        // @include respond(phone) {
-        //     transform: skewX(0);
-        // }
+        @include respond(phone) {
+            transform: skewX(0);
+        }
     }
 
     &__caption {
